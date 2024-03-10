@@ -1,0 +1,57 @@
+/* prism-custom-theme.css */
+
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #f8f8f2; /* Text color */
+  background: #282a36; /* Background color */
+}
+
+
+/* HTML Tags */
+.token.tag,
+.token.tag .token.punctuation {
+  color: #ff5555; 
+}
+
+
+/* Comment */
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #6272a4;
+}
+
+/* Keyword */
+.token.keyword {
+  color: #ff79c6;
+}
+
+/* Function name */
+.token.function {
+  color: #50fa7b;
+}
+
+/* String */
+.token.tag .token.punctuation .token.string,
+.token.attr-value .token.punctuation .token.string {
+  color: #f1fa8c;
+}
+
+/* Number */
+.token.number {
+  color: #bd93f9;
+}
+
+/* Operator */
+.token.operator,
+.token.punctuation {
+  color: #ff79c6;
+}
+
+/* Line highlight */
+.token.namespace {
+  opacity: 0.7;
+}
+

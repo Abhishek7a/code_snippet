@@ -48,7 +48,7 @@ function App() {
       <AppProvider>
         <ToastContainer />
         <Router>
-          {/* <Navbar/> */}
+          <Navbar/>
           <NavRouter />
           <Routes>
             <Route exact path='/' element={<NavBar />} />

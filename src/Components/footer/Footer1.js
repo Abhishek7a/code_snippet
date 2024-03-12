@@ -408,7 +408,6 @@ export default function Footer1(props) {
                 <div className="grid grid-cols-1 gap-6 ">
                     <div className="">
                         <h1 className="max-w-lg text-xl font-semibold tracking-tight text-gray-800 xl:text-2xl dark:text-white">Subscribe our newsletter to get an update.</h1>
-
                         <div className=" mt-6">
                             <input id="email" type="text" className="w-full px-2 py-2 text-gray-700 bg-white border rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300" placeholder="Email Address" />
 
@@ -814,10 +813,5 @@ export default function Footer1(props) {
     </>
 
     )
-
-
-
-
-
 
 }

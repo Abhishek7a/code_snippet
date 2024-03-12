@@ -66,14 +66,14 @@ const ClipBoard = (WrappedComponent) => {
                             </button>
                             <select id="dropdown " className='rounded-md md:px-3  md:p-1 outline-none sm:py-2 cursor-pointer float-right ' value={globalVariable} onChange={handleButtonClick}>
                                 <option value="HTML" className='cursor-pointer'>HTML</option>
-                                <option value="React" className='cursor-pointer '>React</option>
+                                <option value="React" className='cursor-pointer'>React</option>
                             </select>
                         </div>
                     </div>
                 </div>
 
-                <div className={`p-0 border-2 border-gray-700  pr-96 rounded-b-lg mb-4 min-h-96 hide-scrollbar overflow-y-scroll ${dark ? 'bg-gray-900' : 'light'}`} >
-                    <header className={mobile === 2 ? "text-gray-600 body-font w-custom w-25 mx-auto border-x-2  border-gray-300 " : mobile === 1 ? "text-gray-600 body-font w-50 mx-auto border-x-2 border-gray-300 " : "text-gray-600  body-font w-full "} >
+                <div className={`p-0 border-2 border-gray-700 pr-96 rounded-b-lg mb-4 min-h-96 hide-scrollbar overflow-y-scroll ${dark ? 'bg-gray-900' : 'light'}`} >
+                    <header className={mobile === 2 ? "text-gray-600 body-font w-custom w-25 mx-auto border-x-2 border-gray-300 " : mobile === 1 ? "text-gray-600 body-font w-50 mx-auto border-x-2 border-gray-300 " : "text-gray-600  body-font w-full "} >
                         <WrappedComponent state={mobile}/>
                     </header>
                 </div>

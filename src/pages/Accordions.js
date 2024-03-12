@@ -5,8 +5,8 @@ import accordion1 from '../Components/accordions/Accordion1';
 import accordion2 from '../Components/accordions/Accordion2';
 
 export default function Dashboards() {
-    const Accordions1 = RespinsiveGrid(accordion1, { name: 'CodeAccordions1' });
-    const Accordions2 = RespinsiveGrid(accordion2, { name: 'CodeAccordions1' });
+    const Accordions1 = RespinsiveGrid(accordion1, { name: 'codeAccordion1' });
+    const Accordions2 = RespinsiveGrid(accordion2, { name: 'codeAccordion2' });
 
     return (
         <>

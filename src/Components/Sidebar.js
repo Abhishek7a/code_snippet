@@ -26,14 +26,14 @@ const Sidebar = (WrappedComponent) => {
     return function WithSidebar() {
         return (
             <>
-                <div className='w-full lg:hidden fixed top-7 z-40'>
+                <div className='w-full lg:hidden fixed top-8 z-40'>
                     <button onClick={toggleSidebar} data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" className="inline-flex items-center p-2 ms-3 text-sm text-gray-900 rounded-lg focus:outline-none focus:ring-2 border-2 border-gray-900 bg-gray-50 border-solid hover:bg-gray-900 focus:ring-gray-600">
                         <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path clipRule="evenodd" fillRule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
                         </svg>
                     </button>
                 </div>
-                <aside className={`fixed top-20 left-0 z-40 w-64 h-[560px] hide-scrollbar overflow-y-scroll transition-transform ${isSidebarVisible ? '' : '-translate-x-full lg:translate-x-0'}`} aria-label="Sidebar">
+                <aside className={`fixed top-24 left-0 z-40 w-64 h-[560px] hide-scrollbar transition-transform ${isSidebarVisible ? '' : '-translate-x-full lg:translate-x-0'}`} aria-label="Sidebar">
                     <button className="absolute top-0 right-0 p-2 text-gray-900 focus:outline-none" onClick={closeSidebar}>
                         <svg className="sm:w-0 w-5 h-5 sm:h-0 mt-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path

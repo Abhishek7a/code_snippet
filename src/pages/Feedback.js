@@ -6,7 +6,6 @@ import emailjs from '@emailjs/browser';
 export default function Feedback() {
     const formm = useRef();
     const [form, setform] = useState({ name: undefined, email: undefined, subject: undefined, message: undefined })
-    const userId = process.env.REACT_APP_EMAIL_USERID;
     const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
     const API_KEY = process.env.REACT_APP_API_KEY;
 
@@ -50,7 +49,7 @@ export default function Feedback() {
     }
     return (
         <div className='mt-28'>
-            <div className='text-3xl text-center text-gray-900'>Feedback</div>
+            <div className='text-3xl text-center text-red-600'>Feedback</div>
             <div className="flex items-center justify-center mt-3">
                 <div className="m-auto w-3/4">
                     <form  onSubmit={sendForm} ref={formm} >
@@ -83,7 +82,7 @@ export default function Feedback() {
                             ></textarea>
                         </div>
                         <div>
-                            <button onClick={handleSubmit} className="hover:shadow-form rounded-md hover:bg-yellow-500 bg-yellow-400 py-3 px-8 text-base font-semibold text-white outline-none">
+                            <button onClick={handleSubmit} className="hover:shadow-form rounded-md hover:bg-red-700 bg-red-600 py-3 px-8 text-base font-semibold text-gray-100 outline-none">
                                 Submit
                             </button>
                         </div>

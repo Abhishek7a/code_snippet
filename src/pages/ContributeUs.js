@@ -1,40 +1,41 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import emailjs from '@emailjs/browser';
 
 export default function ContributeUs() {
-    const [form, setform] = useState({ name: undefined, specialization: undefined, experience: undefined, resume: undefined, lastSalary: undefined })
+    const formm = useRef();
+    const [form, setform] = useState({ name: undefined, email: undefined, code: undefined })
+    const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+    const API_KEY = process.env.REACT_APP_API_KEY;
 
     const handleSubmit = async () => {
         const formData = new FormData();
         formData.append('name', form.name);
-        formData.append('specialization', form.specialization);
-        formData.append('experience', form.experience);
-        formData.append('lastSalary', form.lastSalary);
+        formData.append('email', form.email);
+        formData.append('code', form.code);
         try {
-            // const res = await axios.post(API_URL, formData);
-            toast.success('Thanks! for your feedback.');
-            // Send Email
             const templateParams = {
-                to_email: 'abhishekarora7327@gmail.com',
+                to_email: 'codesnippett@gmail.com',
                 message: JSON.stringify({
-                    Form: "Career Form",
+                    Form: "Contribution Form",
                     name: form.name,
-                    specialization: form.specialization,
-                    experience: form.experience,
-                    lastSalary: form.lastSalary
+                    email: form.email,
+                    code: form.code
                 }, null, 2),
             };
 
-            // emailjs.send('default_service', TEMPLATE_ID, templateParams, API_KEY)
-            //     .then((response) => {
-            //         // console.log('Email sent successfully!', response);
-            //     })
-            //     .catch((error) => {
-            //         console.error('Error sending email:', error);
-            //     });
+            emailjs.send('default_service', TEMPLATE_ID, templateParams, API_KEY)
+                .then((response) => {
+                    // console.log('Email sent successfully!', response);
+                })
+                .catch((error) => {
+                    console.error('Error sending email:', error);
+                });
 
-            setform({ name: "", specialization: "", experience: "", resume: "", lastSalary: "" })
+            setform({ name: "", email: "", code: "" })
+            toast.success('Thanks a lot for support us and help us to grow our community.');
+
         } catch (error) {
             toast.error(error.response.data.error);
         }
@@ -47,75 +48,34 @@ export default function ContributeUs() {
     }
     return (
         <div className='mt-28'>
-            <div className='text-3xl text-center text-yellow-400'>Contribite Us</div>
-            <p className='text-center text-gray-900 mt-3 w-3/4 m-auto'>Welcome to our website! We're thrilled to offer you free access to our code templates. Want to contribute to our growing community? Your contributions are invaluable to our community. Simply paste your code snippets here.</p>
+            <div className='text-3xl text-center text-blue-800'>Contribite Us</div>
+            <p className='text-center text-gray-800 mt-3 w-1/2 m-auto'>Welcome to our website! We're thrilled to offer you free access to our code templates. Want to contribute to our growing community? Your contributions are invaluable to our community. Simply paste your code snippets here.</p>
             <div className="flex items-center justify-center mt-3">
                 <div className="m-auto w-3/4">
-                    <form method="POST">
+                    <form onSubmit={sendForm} ref={formm} >
                         <div className="mb-3">
-                            <label
-                                for="name"
-                                className="mb-3 block text-base font-medium text-[#07074D]"
-                            >
+                            <label htmlFor="name" className="mb-3 block text-base font-medium text-[#07074D]">
                                 Full Name
                             </label>
-                            <input
-                                type="text"
-                                name="name"
-                                id="name"
-                                placeholder="Full Name"
-                                className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-text-yellow-400"
+                            <input onChange={handleOnChange} value={form.name} type="text" name="name" id="name" placeholder="Full Name" className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-text-yellow-400"
                             />
                         </div>
                         <div className="mb-3">
-                            <label
-                                for="email"
-                                className="mb-3 block text-base font-medium text-[#07074D]"
-                            >
+                            <label htmlFor="email" className="mb-3 block text-base font-medium text-[#07074D]">
                                 Email Address
                             </label>
-                            <input
-                                type="email"
-                                name="email"
-                                id="email"
-                                placeholder="example@domain.com"
-                                className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-text-yellow-400"
+                            <input onChange={handleOnChange} value={form.email} type="email" name="email" id="email" placeholder="example@domain.com" className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-text-yellow-400"
                             />
                         </div>
                         <div className="mb-3">
-                            <label
-                                for="subject"
-                                className="mb-3 block text-base font-medium text-[#07074D]"
-                            >
-                                Subject
-                            </label>
-                            <input
-                                type="text"
-                                name="subject"
-                                id="subject"
-                                placeholder="Enter your subject"
-                                className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-text-yellow-400"
-                            />
-                        </div>
-                        <div className="mb-3">
-                            <label
-                                for="message"
-                                className="mb-3 block text-base font-medium text-[#07074D]"
-                            >
+                            <label htmlFor="code" className="mb-3 block text-base font-medium text-[#07074D]">
                                 Code
                             </label>
-                            <textarea
-                                rows="7"
-                                name="message"
-                                id="message"
-                                placeholder="Type your message"
-                                className="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-yellow-400"
+                            <textarea onChange={handleOnChange} value={form.code} rows="7" name="code" id="code" placeholder="Paste your code here" className="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-yellow-400"
                             ></textarea>
                         </div>
                         <div>
-                            <button
-                                className="hover:shadow-form rounded-md hover:bg-yellow-500 bg-yellow-400 py-3 px-8 text-base font-semibold text-white outline-none"
-                            >
+                            <button onClick={handleSubmit} className="hover:shadow-form rounded-md hover:bg-blue-700 bg-blue-800 py-3 px-8 text-base font-semibold text-gray-100 outline-none">
                                 Submit
                             </button>
                         </div>

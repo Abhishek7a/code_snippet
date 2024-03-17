@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import { AppProvider } from './AppContext';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -69,6 +69,7 @@ function App() {
             <Route exact path='/dialogBox' element={<DialogBox />} />
             <Route exact path='/template' element={<Template />} />
             <Route exact path='/animation' element={<Animation />} />
+            {/* <Route path='*' element={<NavBar />} /> */}
           </Routes>
           <Footer />
         </Router >

@@ -14,6 +14,8 @@ import CodeFooter3 from '../pages/codeFooter/CodeFooter3';
 import CodeFooter4 from '../pages/codeFooter/CodeFooter4';
 import CodeAccordion1 from '../pages/codeAccordions/CodeAccordion1';
 import CodeAccordion2 from '../pages/codeAccordions/CodeAccordion2';
+import CodeEcommerce1 from '../pages/codeEcommerce/CodeEcommerce1';
+import CodeEcommerce2 from '../pages/codeEcommerce/CodeEcommerce2';
 
 export default function NavRouter() {
     return (
@@ -35,6 +37,9 @@ export default function NavRouter() {
 
                 <Route exact path='/codeAccordion1' element={<CodeAccordion1 />} />
                 <Route exact path='/codeAccordion2' element={<CodeAccordion2 />} />
+
+                <Route exact path='/codeEcommerce1' element={<CodeEcommerce1 />} />
+                <Route exact path='/codeEcommerce2' element={<CodeEcommerce2 />} />
             </Routes>
 
     )

@@ -131,32 +131,14 @@ export default function Footer1(props) {
 
                     <div className="flex gap-4 sm:gap-0 hover:cursor-pointer">
                         <span className="inline-flex sm:ml-0 sm:mt-0 mt-5 lg:mt-2 sm:items-center justify-center sm:justify-start">
+
                             <a className="lg:ml-5 ml-2 w-8 h-8">
-                                <svg
-                                    viewBox="0 0 16 16"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                >
-                                    <path
-                                        fill="#1D9BF0"
-                                        d="M13.567 5.144c.008.123.008.247.008.371 0 3.796-2.889 8.173-8.172 8.173v-.002A8.131 8.131 0 011 12.398a5.768 5.768 0 004.25-1.19 2.876 2.876 0 01-2.683-1.995c.431.083.875.066 1.297-.05A2.873 2.873 0 011.56 6.348v-.036c.4.222.847.345 1.304.36a2.876 2.876 0 01-.89-3.836 8.152 8.152 0 005.92 3 2.874 2.874 0 014.895-2.619 5.763 5.763 0 001.824-.697 2.883 2.883 0 01-1.262 1.588A5.712 5.712 0 0015 3.656a5.834 5.834 0 01-1.433 1.488z"
-                                    />
-                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 512 512" id="twitter"><g clip-path="url(#clip0_84_15697)"><rect width="512" height="512" fill="#000" rx="60"></rect><path fill="#fff" d="M355.904 100H408.832L293.2 232.16L429.232 412H322.72L239.296 302.928L143.84 412H90.8805L214.56 270.64L84.0645 100H193.28L268.688 199.696L355.904 100ZM337.328 380.32H366.656L177.344 130.016H145.872L337.328 380.32Z"></path></g><defs><clipPath id="clip0_84_15697"><rect width="512" height="512" fill="#fff"></rect></clipPath></defs></svg>
                             </a>
                             <a className="lg:ml-5 ml-2 w-8 h-8">
-                                <svg
-                                    viewBox="0 0 24 24"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                                >
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                                     <title>{"linkedin_fill"}</title>
-                                    <g
-                                        id="\u9875\u9762-1"
-                                        stroke="none"
-                                        strokeWidth={1}
-                                        fill="none"
-                                        fillRule="evenodd"
-                                    >
+                                    <g id="\u9875\u9762-1" stroke="none" strokeWidth={1} fill="none" fillRule="evenodd">
                                         <g id="Brand" transform="translate(-336.000000, -48.000000)">
                                             <g id="linkedin_fill" transform="translate(336.000000, 48.000000)">
                                                 <path

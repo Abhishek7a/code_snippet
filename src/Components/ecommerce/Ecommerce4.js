@@ -3,7 +3,7 @@ import React from 'react'
 export default function Ecommerce4() {
     return (
         <>
-            <div class="relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+            <div class="relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mx-auto">
                 <div class="relative mx-4 mt-4 h-96 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700">
                     <img
                         src="https://images.unsplash.com/photo-1629367494173-c78a56567877?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=927&amp;q=80"
@@ -35,14 +35,14 @@ export default function Ecommerce4() {
             </div>
             <div class="w-full pt-5 px-4 mb-8 mx-auto ">
                 <div class="text-sm text-gray-700 py-1">
-                    Made with <a class="text-gray-700 font-semibold" href="https://www.material-tailwind.com/docs/html/card?ref=tailwindcomponents" target="_blank">Material Tailwind</a> by <a href="https://www.creative-tim.com?ref=tailwindcomponents" class="text-gray-700 font-semibold" target="_blank"> Creative Tim</a>.
+                    Made by <a href="https://www.creative-tim.com?ref=tailwindcomponents" class="text-gray-700 font-semibold" target="_blank">Code Snippet</a>.
                 </div>
             </div>
 
-            {/* <link
+            <link
                 rel="stylesheet"
                 href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css"
-            /> */}
+            />
         </>
     )
 }

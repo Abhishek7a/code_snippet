@@ -1,12 +1,12 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AppProvider } from './AppContext';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Navbar from './Components/Navbar';
+import MainNavbar from './Components/MainNavbar';
 import Sidebar from './Components/Sidebar';
 import Navbars from './pages/Navbars';
-import NavRouter from './router/NavRouter';
 import Sidebars from './pages/Sidebars';
 import Dashboards from './pages/Dashboards';
 import accordions from './pages/Accordions';
@@ -26,34 +26,62 @@ import Feedback from './pages/Feedback';
 import ContributeUs from './pages/ContributeUs';
 import Footer from './Components/Footer';
 
+import CodeNavbar1 from './pages/codeNavbars/CodeNavbar1';
+import CodeNavbar2 from './pages/codeNavbars/CodeNavbar2';
+import CodeNavbar3 from './pages/codeNavbars/CodeNavbar3';
+import CodeNavbar4 from './pages/codeNavbars/CodeNavbar4';
+import CodeNavbar5 from './pages/codeNavbars/CodeNavbar5';
+import CodeSidebar1 from './pages/codeSidebars/CodeSidebar1';
+import CodeSidebar2 from './pages/codeSidebars/CodeSidebar2';
+import CodeSidebar3 from './pages/codeSidebars/CodeSidebar3';
+import CodeFooter1 from './pages/codeFooter/CodeFooter1';
+import CodeFooter2 from './pages/codeFooter/CodeFooter2';
+import CodeFooter3 from './pages/codeFooter/CodeFooter3';
+import CodeFooter4 from './pages/codeFooter/CodeFooter4';
+import CodeAccordion1 from './pages/codeAccordions/CodeAccordion1';
+import CodeAccordion2 from './pages/codeAccordions/CodeAccordion2';
+import CodeEcommerce1 from './pages/codeEcommerce/CodeEcommerce1';
+import CodeEcommerce2 from './pages/codeEcommerce/CodeEcommerce2';
+import CodeCheckout1 from './pages/codeCheckout/CodeCheckout1';
+import CodeCheckout2 from './pages/codeCheckout/CodeCheckout2';
+
 function App() {
-  const NavBar = Sidebar(Navbars);
-  const SideBar = Sidebar(Sidebars);
-  const DashBoard = Sidebar(Dashboards);
-  const Accordions = Sidebar(accordions);
-  const CheckOuts = Sidebar(Checkouts);
-  const Ecommerce = Sidebar(ecommerce);
-  const Footers = Sidebar(footers);
-  const Login = Sidebar(login);
-  const Cards = Sidebar(cards);
-  const Forms = Sidebar(forms);
-  const PageNotFound = Sidebar(pageNotFound);
-  const Email = Sidebar(email);
-  const DialogBox = Sidebar(dialogBox);
-  const Template = Sidebar(template);
-  const Animation = Sidebar(animation);
+  const NavBar = MainNavbar(Navbars);
+  const SideBar = MainNavbar(Sidebars);
+  const DashBoard = MainNavbar(Dashboards);
+  const Accordions = MainNavbar(accordions);
+  const CheckOuts = MainNavbar(Checkouts);
+  const Ecommerce = MainNavbar(ecommerce);
+  const Footers = MainNavbar(footers);
+  const Login = MainNavbar(login);
+  const Cards = MainNavbar(cards);
+  const Forms = MainNavbar(forms);
+  const PageNotFound = MainNavbar(pageNotFound);
+  const Email = MainNavbar(email);
+  const DialogBox = MainNavbar(dialogBox);
+  const Template = MainNavbar(template);
+  const Animation = MainNavbar(animation);
 
   return (
     <>
       <AppProvider>
         <ToastContainer />
         <Router>
-          <Navbar/>
-          <NavRouter />
           <Routes>
             <Route exact path='/' element={<NavBar />} />
-            <Route exact path='/feedback' element={<Feedback />} />
-            <Route exact path='/Contribute' element={<ContributeUs />} />
+            <Route exact path='/feedback' element={
+              <>
+                <Navbar />
+                <Feedback />
+              </>
+            } />
+            <Route exact path='/Contribute' element={
+              <>
+                <Navbar />
+
+                <ContributeUs />
+              </>
+            } />
             <Route exact path='/sidebar' element={<SideBar />} />
             <Route exact path='/dashboard' element={<DashBoard />} />
             <Route exact path='/accordions' element={<Accordions />} />
@@ -69,7 +97,32 @@ function App() {
             <Route exact path='/dialogBox' element={<DialogBox />} />
             <Route exact path='/template' element={<Template />} />
             <Route exact path='/animation' element={<Animation />} />
-            {/* <Route path='*' element={<NavBar />} /> */}
+
+            <Route exact path='/codeNavbar1' element={<CodeNavbar1 />} />
+            <Route exact path='/codeNavbar2' element={<CodeNavbar2 />} />
+            <Route exact path='/codeNavbar3' element={<CodeNavbar3 />} />
+            <Route exact path='/codeNavbar4' element={<CodeNavbar4 />} />
+            <Route exact path='/codeNavbar5' element={<CodeNavbar5 />} />
+
+            <Route exact path='/codeSidebar1' element={<CodeSidebar1 />} />
+            <Route exact path='/codeSidebar2' element={<CodeSidebar2 />} />
+            <Route exact path='/codeSidebar3' element={<CodeSidebar3 />} />
+
+            <Route exact path='/codeFooter1' element={<CodeFooter1 />} />
+            <Route exact path='/codeFooter2' element={<CodeFooter2 />} />
+            <Route exact path='/codeFooter3' element={<CodeFooter3 />} />
+            <Route exact path='/codeFooter4' element={<CodeFooter4 />} />
+
+            <Route exact path='/codeAccordion1' element={<CodeAccordion1 />} />
+            <Route exact path='/codeAccordion2' element={<CodeAccordion2 />} />
+
+            <Route exact path='/codeEcommerce1' element={<CodeEcommerce1 />} />
+            <Route exact path='/codeEcommerce2' element={<CodeEcommerce2 />} />
+
+            <Route exact path='/codeCheckout1' element={<CodeCheckout1 />} />
+            <Route exact path='/codeCheckout2' element={<CodeCheckout2 />} />
+
+            <Route path='*' element={<NavBar />} />
           </Routes>
           <Footer />
         </Router >

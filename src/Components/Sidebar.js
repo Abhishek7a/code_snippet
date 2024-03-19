@@ -89,14 +89,14 @@ const Sidebar = (WrappedComponent) => {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/checkout" onClick={() => { closeSidebar(); goToTop() }} className={`${window.location.pathname === '/checkout'  ? "flex items-center p-2  rounded-lg text-white bg-gray-900 group" : "flex items-center p-2  hover:text-white rounded-lg text-gray-900  hover:bg-gray-900 group"}`}>
+                                <Link to="/checkout" onClick={() => { closeSidebar(); goToTop() }} className={`${window.location.pathname === '/checkout' ? "flex items-center p-2  rounded-lg text-white bg-gray-900 group" : "flex items-center p-2  hover:text-white rounded-lg text-gray-900  hover:bg-gray-900 group"}`}>
                                     <svg className='w-6 h-6' aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
                                         <path d="M17 5.923A1 1 0 0 0 16 5h-3V4a4 4 0 1 0-8 0v1H2a1 1 0 0 0-1 .923L.086 17.846A2 2 0 0 0 2.08 20h13.84a2 2 0 0 0 1.994-2.153L17 5.923ZM7 9a1 1 0 0 1-2 0V7h2v2Zm0-5a2 2 0 1 1 4 0v1H7V4Zm6 5a1 1 0 1 1-2 0V7h2v2Z" />
                                     </svg>
                                     <span className="flex-1 ms-3 whitespace-nowrap">Checkout</span>
                                 </Link>
                             </li>
-                            <li>
+                            { /*       <li>
                                 <Link to="/cards" onClick={() => { closeSidebar(); goToTop() }} className={`${window.location.pathname === '/cards' ? "flex items-center p-2  rounded-lg text-white bg-gray-900 group" : "flex items-center p-2  hover:text-white rounded-lg text-gray-900  hover:bg-gray-900 group"}`}>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
@@ -105,7 +105,7 @@ const Sidebar = (WrappedComponent) => {
                                     <span className="flex-1 ms-3 whitespace-nowrap">Cards</span>
                                 </Link>
                             </li>
-                            { /*     <li>
+                             <li>
                                 <Link to="/dashboard" onClick={() => { closeSidebar(); goToTop() }} className={`${window.location.pathname === '/dashboard' ? "flex items-center p-2  rounded-lg text-white bg-gray-900 group" : "flex items-center p-2  hover:text-white rounded-lg text-gray-900  hover:bg-gray-900 group"}`}>
                                     <svg className='w-6 h-6' aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21">
                                         <path d="M16.975 11H10V4.025a1 1 0 0 0-1.066-.998 8.5 8.5 0 1 0 9.039 9.039.999.999 0 0 0-1-1.066h.002Z" />

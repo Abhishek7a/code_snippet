@@ -49,7 +49,7 @@ export default function ContributeUs() {
     return (
         <div className='mt-28'>
             <div className='text-3xl text-center text-blue-800'>Contribite Us</div>
-            <p className='text-center text-gray-800 mt-3 w-1/2 m-auto'>Welcome to our website! We're thrilled to offer you free access to our code templates. Want to contribute to our growing community? Your contributions are invaluable to our community. Simply paste your code snippets here.</p>
+            <p className='text-center text-gray-800 mt-3 w-3/4 m-auto'>Welcome to our website! We're thrilled to offer you free access to our code templates or componenets. Want to contribute to our growing community? Your contributions are invaluable to our community. Simply paste your code snippets here.</p>
             <div className="flex items-center justify-center mt-3">
                 <div className="m-auto w-3/4">
                     <form onSubmit={sendForm} ref={formm} >

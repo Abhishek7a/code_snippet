@@ -15,11 +15,11 @@ export default function Navbars() {
 
     return (
         <>
+            <NavBar4 />
             <NavBar1 />
             <NavBar2 />
             <NavBar3 />
             <NavBar5 />
-            <NavBar4 />
         </>
 
     )

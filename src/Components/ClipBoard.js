@@ -34,7 +34,7 @@ const ClipBoard = (WrappedComponent) => {
         return (
             <div className="">
                 <div className="border border-gray-200 rounded-lg rounded-b-none bg-gray-900 dark:border-gray-600 dark:bg-gray-800 ">
-                    <div className="flex justify-between w-full grid-cols-3 p-4  rounded-lg md:mt-28  sm:mt-32 mt-40 sm:grid-cols-2">
+                    <div className="flex justify-between w-full grid-cols-3 p-4 rounded-lg mt-28 sm:grid-cols-2">
                         <div className="flex items-center space-x-3 text-lg font-medium text-gray-700 dark:text-gray-500">
                             <button onClick={() => showToast()} className="clipboard-btn border-gray-200  px-3 py-3  h-9 text-xs font-medium bg-white flex items-center rounded-lg focus:outline-none hover:bg-gray-100 hover:text-gray-800 focus:z-10 focus:ring-2 focus:ring-gray-800" data-clipboard-target="#codeRef" >
                                 <svg className="w-3.5 h-3.5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>

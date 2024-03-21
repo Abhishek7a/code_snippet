@@ -13,7 +13,7 @@ export default function Navbar4(props) {
   };
   const Desktop = () => {
     return (
-      <header className="dark:text-white dark:bg-gray-900 h-[500px]">
+      <header className="dark:text-white dark:bg-gray-900 lg:h-[500px]">
         <nav className="mx-auto flex max-w-7xl items-start justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:hidden">
             <button type="button" className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 ">
@@ -138,7 +138,7 @@ export default function Navbar4(props) {
             </div>
           </div>
         </nav>
-        <div className="lg:hidden relative h-56 item-center" role="dialog" aria-modal="true">
+        <div className="lg:hidden relative h-96 item-center" role="dialog" aria-modal="true">
           <div className="absolute inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <span className="self-center text-2xl font-semibold whitespace-nowrap">Code Snippet</span>
@@ -153,7 +153,7 @@ export default function Navbar4(props) {
             </div>
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
-                <div className="space-y-2 py-6">
+                <div className="space-y-2 py-2">
                   <div className="-mx-3">
                     <button type="button" className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:bg-gray-50" aria-controls="disclosure-1" aria-expanded="false">
                       <svg className="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">

@@ -3,12 +3,12 @@ import React from 'react'
 export default function Dashboard3() {
   return (
     <div className="flex bg-gray-200 dark:bg-gray-900 text-gray-900 dark:text-white">
-      <button data-drawer-target="separator-sidebar" data-drawer-toggle="separator-sidebar" aria-controls="separator-sidebar" type="button" className="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-900 rounded-lg sm:hidden focus:outline-none ring-2 ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600 dark:text-white">
+      <button data-drawer-target="separator-sidebar" data-drawer-toggle="separator-sidebar" aria-controls="separator-sidebar" type="button" className="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-900 rounded-lg hidden focus:outline-none ring-2 ring-gray-200 dark:hover:bg-gray-700 dark:focus:ring-gray-600 dark:text-white">
         <svg className="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
           <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
         </svg>
       </button>
-      <aside className="sm:flex hidden h-full w-20 flex-col items-center bg-gray-50 dark:bg-gray-800 ">
+      <aside className="sm:flex  h-full w-20 flex-col items-center bg-gray-50 dark:bg-gray-800 ">
         <div className="flex h-full w-full items-center justify-center p-3">
           <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-12 h-12 text-white p-2 bg-violet-500 rounded-full" viewBox="0 0 20 16">
             <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 4 1 8l4 4m10-8 4 4-4 4M11 1 9 15"></path>

@@ -1,5 +1,5 @@
 import React from 'react'
-import shirt from '../../assets/shirt-removebg-preview.png'
+import shirt from '../../assets/shirt.png'
 import { Link } from 'react-router-dom'
 
 export default function Ecommerce1(props) {

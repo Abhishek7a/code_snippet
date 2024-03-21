@@ -6,14 +6,57 @@ import emailjs from '@emailjs/browser';
 export default function ContributeUs() {
     const formm = useRef();
     const [form, setform] = useState({ name: undefined, email: undefined, code: undefined })
+    const [errors, setErrors] = useState({
+        name: '',
+        email: '',
+        code: '',
+    });
     const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
     const API_KEY = process.env.REACT_APP_API_KEY;
+
+    const validateForm = () => {
+        let valid = true;
+        const newErrors = { ...errors };
+
+        if (!form.name || !form.name.trim()) {
+            newErrors.name = 'Name is required';
+            valid = false;
+        } else {
+            newErrors.name = '';
+        }
+
+        if (!form.email || !form.email.trim()) {
+            newErrors.email = 'Email is required';
+            valid = false;
+        } else if (!/\S+@\S+\.\S+/.test(form.email)) {
+            newErrors.email = 'Email is invalid';
+            valid = false;
+        } else {
+            newErrors.email = '';
+        }
+
+        if (!form.code || !form.code.trim()) {
+            newErrors.code = 'Subject is required';
+            valid = false;
+        } else {
+            newErrors.code = '';
+        }
+
+        setErrors(newErrors);
+        return valid;
+    };
 
     const handleSubmit = async () => {
         const formData = new FormData();
         formData.append('name', form.name);
         formData.append('email', form.email);
         formData.append('code', form.code);
+        if (validateForm()) {
+            // console.log('Form submitted:', formData);
+        } else {
+            console.log('Form validation failed');
+            return
+        }
         try {
             const templateParams = {
                 to_email: 'codesnippett@gmail.com',
@@ -34,7 +77,7 @@ export default function ContributeUs() {
                 });
 
             setform({ name: "", email: "", code: "" })
-            toast.success('Thanks a lot for support us and help us to grow our community.');
+            toast.success('Thankyou for your support and help us to grow our community.');
 
         } catch (error) {
             toast.error(error.response.data.error);
@@ -59,6 +102,7 @@ export default function ContributeUs() {
                             </label>
                             <input onChange={handleOnChange} value={form.name} type="text" name="name" id="name" placeholder="Full Name" className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-text-yellow-400"
                             />
+                              {errors.name && <span className='text-red-600'>{errors.name}</span>}
                         </div>
                         <div className="mb-3">
                             <label htmlFor="email" className="mb-3 block text-base font-medium text-[#07074D]">
@@ -66,6 +110,7 @@ export default function ContributeUs() {
                             </label>
                             <input onChange={handleOnChange} value={form.email} type="email" name="email" id="email" placeholder="example@domain.com" className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-text-yellow-400"
                             />
+                               {errors.email && <span className='text-red-600'>{errors.email}</span>}
                         </div>
                         <div className="mb-3">
                             <label htmlFor="code" className="mb-3 block text-base font-medium text-[#07074D]">
@@ -73,6 +118,7 @@ export default function ContributeUs() {
                             </label>
                             <textarea onChange={handleOnChange} value={form.code} rows="7" name="code" id="code" placeholder="Paste your code here" className="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-yellow-400"
                             ></textarea>
+                             {errors.code && <span className='text-red-600'>{errors.code}</span>}
                         </div>
                         <div>
                             <button onClick={handleSubmit} className="hover:shadow-form rounded-md hover:bg-blue-700 bg-blue-800 py-3 px-8 text-base font-semibold text-gray-100 outline-none">

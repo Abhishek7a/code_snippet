@@ -67,21 +67,11 @@ function App() {
       <AppProvider>
         <ToastContainer />
         <Router>
+        <Navbar />
           <Routes>
             <Route exact path='/' element={<NavBar />} />
-            <Route exact path='/feedback' element={
-              <>
-                <Navbar />
-                <Feedback />
-              </>
-            } />
-            <Route exact path='/Contribute' element={
-              <>
-                <Navbar />
-
-                <ContributeUs />
-              </>
-            } />
+            <Route exact path='/feedback' element={<Feedback />} />
+            <Route exact path='/Contribute' element={<ContributeUs />} />
             <Route exact path='/sidebar' element={<SideBar />} />
             <Route exact path='/dashboard' element={<DashBoard />} />
             <Route exact path='/accordions' element={<Accordions />} />

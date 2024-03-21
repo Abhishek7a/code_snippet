@@ -6,8 +6,8 @@ export default function Ecommerce2(props) {
   const Desktop = () => {
     return (
       <section className="text-gray-600 dark:bg-gray-900 dark:text-gray-50 body-font overflow-hidden" >
-        <div className="container px-5 py-16 mx-auto">
-          <div className="mx-auto flex flex-wrap">
+        <div className="container px-5 py-16 mx-auto ">
+          <div className="mx-auto flex flex-wrap ">
             <div className="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
               <h2 className="text-sm title-font text-gray-500 tracking-widest">BRAND NAME</h2>
               <h1 className="text-gray-900 text-3xl title-font font-medium mb-4 dark:text-gray-50">Animated Night Hill Illustrations</h1>
@@ -52,6 +52,7 @@ export default function Ecommerce2(props) {
           <div className="w-full mb-6">
             <h2 className="text-sm title-font text-gray-500 tracking-widest">BRAND NAME</h2>
             <h1 className="text-gray-900 text-3xl title-font font-medium mb-4 dark:text-gray-50">Animated Night Hill Illustrations</h1>
+            <img src={shoes} alt="shoes" className="w-full h-auto object-cover p-5 object-center rounded" />
             <div className="flex mb-4">
               <Link className="flex-grow text-red-500 border-b-2 border-red-500 py-2 text-lg px-1">Description</Link>
               <Link className="flex-grow border-b-2 border-gray-300 py-2 text-lg px-1">Reviews</Link>
@@ -80,7 +81,6 @@ export default function Ecommerce2(props) {
               </button>
             </div>
           </div>
-          <img src={shoes} alt="shoes" className="w-full h-auto object-cover p-5 object-center rounded" />
         </div>
       </div>
     </section>

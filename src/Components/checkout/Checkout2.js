@@ -1,5 +1,5 @@
 import React from 'react'
-import background from '../../assets/Payment-Card-01.jpg'
+import background from '../../assets/Payment-Card-background.jpg'
 
 export default function Checkout2() {
   return (

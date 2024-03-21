@@ -1,5 +1,5 @@
 import React from 'react'
-import burgur from '../../assets/burgur-removebg-preview.png'
+import burgur from '../../assets/burgur.png'
 import { Link } from 'react-router-dom'
 
 export default function Checkout1(props) {
@@ -8,7 +8,7 @@ export default function Checkout1(props) {
       <body className="bg-gray-100 dark:bg-gray-900 dark:text-gray-50">
         <div className="mx-auto">
           <div className="lg:flex shadow-md ">
-            <div className="lg:w-3/4 bg-gray-50 dark:bg-gray-800 p-4 relative">
+            <div className="lg:w-3/4 bg-gray-50 dark:bg-gray-800 p-3 relative">
               <div className="flex justify-between border-b pb-8">
                 <h1 className="font-semibold text-2xl">Shopping Cart</h1>
               </div>
@@ -18,10 +18,10 @@ export default function Checkout1(props) {
                 <h3 className="font-semibold text-gray-600 dark:text-gray-100 text-xs uppercase md:w-1/5 text-center md:block hidden">Price</h3>
                 <h3 className="font-semibold text-gray-600 dark:text-gray-100 text-xs uppercase w-1/5 text-center">Total</h3>
               </div>
-              <div className="flex items-center hover:bg-gray-100 dark:hover:bg-gray-600 px-6 py-3" >
+              <div className="flex items-center hover:bg-gray-100 dark:hover:bg-gray-600 py-3" >
                 <div className="flex md:w-2/5 w-3/5">
                   <div className="w-20">
-                    <img className="h-24 " src={burgur} alt="burgur" />
+                    <img className="h-24" src={burgur} alt="burgur" />
                   </div>
                   <div className="flex flex-col justify-between ml-4 flex-grow">
                     <span className="font-bold md:text-sm text-xs">Burgur</span>
@@ -41,7 +41,7 @@ export default function Checkout1(props) {
                 <span className="text-center w-1/5 md:block hidden font-semibold text-sm">₹30.00</span>
                 <span className="text-center w-1/5 font-semibold text-sm">₹30.00</span>
               </div>
-              <Link to='#' className="flex font-semibold text-indigo-600 text-sm  my-10 absolute bottom-0">
+              <Link to='#' className="flex font-semibold text-indigo-600 text-sm  my-10">
                 <svg className="fill-current mr-2 text-indigo-600 w-4" viewBox="0 0 448 512"><path d="M134.059 296H436c6.627 0 12-5.373 12-12v-56c0-6.627-5.373-12-12-12H134.059v-46.059c0-21.382-25.851-32.09-40.971-16.971L7.029 239.029c-9.373 9.373-9.373 24.569 0 33.941l86.059 86.059c15.119 15.119 40.971 4.411 40.971-16.971V296z" /></svg>
                 Add more Items
               </Link>

@@ -17,7 +17,7 @@ const ResponsiveGrid = (WrappedComponent, name) => {
     }, [dark]);
 
     return function ResponsiveGrid() {
-        return <div className="lg:mt-28 mt-16">
+        return <div className="lg:mt-28 mt-28">
             <div className="border border-gray-900 rounded-lg rounded-b-none bg-gray-900 dark:border-gray-800 dark:bg-gray-800">
                 <div className="flex justify-between w-full grid-cols-3 p-4 rounded-lg sm:grid">
                     <div className="flex items-center space-x-3 text-lg font-medium text-gray-900 dark:text-gray-500">

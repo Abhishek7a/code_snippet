@@ -16,8 +16,8 @@ export default function Header() {
     }
     return (
         <>
-            <div className={`${load === 0 ? 'w-0' : 'load w-full'} bg-gray-900 h-1 z-50 top-0 fixed`}></div>
-            <header class="text-gray-600 body-font top-0 fixed bg-gray-50 w-full mb-10 z-40">
+            <div className={`${load === 0 ? 'w-0' : 'backload w-full'} bg-gray-900 h-1 z-30 top-0 fixed`}></div>
+            <header class="text-gray-600 body-font top-0 fixed bg-gray-50 w-full mb-10 z-20">
                 <div class="container mx-auto flex flex-wrap p-4 flex-col md:flex-row items-center">
                     <div class="flex title-font font-medium items-center text-gray-900 ">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" className='w-10 h-10' viewBox="0 0 512 512" style={{ enableBackground: "new 0 0 512 512" }} xmlSpace="preserve">

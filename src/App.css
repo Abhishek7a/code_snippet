@@ -23,16 +23,34 @@ body::-webkit-scrollbar {
 .load {
   animation: load 1s 1 forwards;
 }
+.backload {
+  animation: backload 1s 1 forwards;
+}
 
 @keyframes load {
   0% {
     width: 0%;
+    
   }
-  50% {
+  20% {
     width: 90%;
   }
   100% {
     width: 100%;
+  }
+}
+@keyframes backload {
+  0% {
+    width: 0%;
+  }
+  20% {
+    width:20%;
+  }
+  95% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
   }
 }
 @media screen and (max-width: 720px) {

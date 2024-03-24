@@ -17,9 +17,9 @@ export default function Navbars() {
         <>
             <NavBar4 />
             <NavBar1 />
+            <NavBar5 />
             <NavBar2 />
             <NavBar3 />
-            <NavBar5 />
         </>
 
     )

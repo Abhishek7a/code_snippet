@@ -24,13 +24,11 @@ export default function Ecommerce() {
         <>
             <Ecommerce1 />
             <Ecommerce2 />
-            {/* <Ecommerce3 /> */}
-            {/* <Ecommerce4 /> */}
-            {/* <Ecommerce5 /> */}
-            {/* <Ecommerce6 /> */}
-            {/* <Ecommerce7 /> */}
-            {/* <Ecommerce8 /> */}
-            {/* <Ecommerce9 /> */}
+            {/* <Ecommerce3 />
+            <Ecommerce5 />
+            <Ecommerce6 />
+            <Ecommerce8 />
+            <Ecommerce9 /> */}
         </>
     )
 }

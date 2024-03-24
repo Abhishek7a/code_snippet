@@ -18,11 +18,11 @@ export default function Forms() {
     return (
         <>
             <Form1 />
-            <Form2 />
+            {/* <Form2 /> */}
             <Form3 />
             <Form4 />
-            <Form5 />
-            <Form6 />
+            {/* <Form5 /> */}
+            {/* <Form6 /> */}
         </>
     )
 }

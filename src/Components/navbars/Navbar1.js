@@ -3,7 +3,7 @@ import logo from '../../assets/Logo.png'
 
 export default function Navbar1(props) {
     const Desktop = () => {
-        return (<div className="container mx-auto flex flex-wrap p-5  pt-4 flex-col md:flex-row items-center dark:bg-gray-900 bg-gray-50 dark:text-white">
+        return <div className="container mx-auto flex flex-wrap p-5  pt-4 flex-col md:flex-row items-center dark:bg-gray-900 bg-gray-50 dark:text-white">
             <div className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
                 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="none" stroke="currentColor" strokeLinecap="round" stroke-linejoin="round" stroke-width="2" className="w-10 h-10 text-white p-2 bg-blue-500 rounded-full" viewBox="0 0 20 16">
                     <path stroke="currentColor" strokeLinecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4 1 8l4 4m10-8 4 4-4 4M11 1 9 15"></path>
@@ -25,7 +25,6 @@ export default function Navbar1(props) {
                 </svg>
             </button>
         </div>
-        )
     }
     const Mobile = () => {
         return <div className="container mx-auto flex flex-wrap p-5  pt-4 flex-row items-center dark:bg-gray-900 dark:text-white bg-gray-50">

@@ -120,7 +120,7 @@ const MainNavbar = (WrappedComponent) => {
                                         <span className="flex-1 ms-3 whitespace-nowrap">Accordions</span>
                                     </Link>
                                 </li>
-                               <li>
+                                <li>
                                     <Link to="/dialogBox" onClick={() => { closeSidebar(); goToTop() }} className={`${window.location.pathname === '/dialogBox' ? "flex items-center p-2  rounded-lg text-white bg-gray-900 group" : "flex items-center p-2  hover:text-white rounded-lg text-gray-900  hover:bg-gray-900 group"}`}>
                                         <svg fill="currentColor" className='w-6 h-6' viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
                                         >
@@ -128,7 +128,8 @@ const MainNavbar = (WrappedComponent) => {
                                                 <path d="M8 16a8 8 0 0 1-8-8 8 8 0 0 1 8-8 8 8 0 0 1 8 8 8 8 0 0 1-8 8zm0-1a7 7 0 0 0 7-7 7 7 0 0 0-7-7 7 7 0 0 0-7 7 7 7 0 0 0 7 7z" />
                                                 <path
                                                     d="M8 3.75c-.386 0-.69.124-.914.373A1.27 1.27 0 0 0 6.75 5c0 .336.112.628.336.877.224.249.528.373.914.373s.69-.124.914-.373A1.27 1.27 0 0 0 9.25 5a1.27 1.27 0 0 0-.336-.877C8.69 3.874 8.386 3.75 8 3.75zM7 7v5h2V7z"
-                                                    style={{ lineHeight: "1000%", InkscapeFontSpecification: "Ubuntu",
+                                                    style={{
+                                                        lineHeight: "1000%", InkscapeFontSpecification: "Ubuntu",
                                                     }} fontWeight={400} fontFamily="Ubuntu" letterSpacing={0} wordSpacing={0}
                                                 />
                                             </g>
@@ -136,19 +137,19 @@ const MainNavbar = (WrappedComponent) => {
                                         <span className="flex-1 ms-3 whitespace-nowrap">DialogBox</span>
                                     </Link>
                                 </li>
-                                 <li>
+                                <li>
                                     <Link to="/email" onClick={() => { closeSidebar(); goToTop() }} className={`${window.location.pathname === '/email' ? "flex items-center p-2  rounded-lg text-white bg-gray-900 group" : "flex items-center p-2  hover:text-white rounded-lg text-gray-900  hover:bg-gray-900 group"}`}>
                                         <svg className='w-6 h-6' xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 128 96"><g data-name="Layer 2"><path d="M0 11.283V8a8 8 0 0 1 8-8h112a8 8 0 0 1 8 8v3.283l-64 40zm66.12 48.11a4.004 4.004 0 0 1-4.24 0L0 20.717V88a8 8 0 0 0 8 8h112a8 8 0 0 0 8-8V20.717z"></path></g></svg>
                                         <span className="flex-1 ms-3 whitespace-nowrap">Email</span>
                                     </Link>
                                 </li>
-                              {/*    <li>
+                                <li>
                                     <Link to="/login" onClick={() => { closeSidebar(); goToTop() }} className={`${window.location.pathname === '/login' ? "flex items-center p-2  rounded-lg text-white bg-gray-900 group" : "flex items-center p-2  hover:text-white rounded-lg text-gray-900  hover:bg-gray-900 group"}`}>
                                         <svg className='w-6 h-6' xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20"><path d="M14 10 8 5v3H1v4h7v3l6-5zm3 7H9v2h8c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2H9v2h8v14z"></path></svg>
                                         <span className="flex-1 ms-3 whitespace-nowrap">Login/Sign up</span>
                                     </Link>
                                 </li>
-                                <li>
+                                {/*   <li>
                                     <Link to="/forms" onClick={() => { closeSidebar(); goToTop() }} className={`${window.location.pathname === '/forms' ? "flex items-center p-2  rounded-lg text-white bg-gray-900 group" : "flex items-center p-2  hover:text-white rounded-lg text-gray-900  hover:bg-gray-900 group"}`}>
                                         <svg className='w-6 h-6' xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 64 64" ><path d="M54 59.11H10a1 1 0 0 1-1-1V5.89a1 1 0 0 1 1-1h32.3a1 1 0 0 1 .7.31l11.7 12.12a1 1 0 0 1 .3.68v40.1a1 1 0 0 1-1 1.01Zm-43-2h42v-38.7L41.88 6.89H11Z"></path><path d="M42.3 19a1 1 0 0 1-1-1V5.89a1 1 0 0 1 2 0V18a1 1 0 0 1-1 1Z"></path><path d="M48 19h-5.7a1 1 0 0 1 0-2H48a1 1 0 0 1 0 2zm-18.91 6.86H17.18a1 1 0 0 1-1-1V13a1 1 0 0 1 1-1h11.91a1 1 0 0 1 1 1v11.86a1 1 0 0 1-1 1zm-10.91-2h9.91V14h-9.91zM46.84 34H17.16a1 1 0 1 1 0-2h29.68a1 1 0 0 1 0 2zm0 7.85H17.16a1 1 0 0 1 0-2h29.68a1 1 0 0 1 0 2zm0 7.86H17.16a1 1 0 0 1 0-2h29.68a1 1 0 0 1 0 2z"></path></svg>
 

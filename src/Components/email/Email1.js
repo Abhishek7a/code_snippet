@@ -15,7 +15,7 @@ export default function Email1(props) {
                 <div class="px-2 pt-4 pb-8 border-r border-gray-300">
                     <ul class="space-y-2">
                         <li>
-                            <a class="bg-gray-300 dark:bg-gray-800 bg-opacity-30 text-blue-600 flex items-center justify-between py-1.5 px-4 rounded cursor-pointer">
+                            <a class="bg-gray-300 dark:bg-gray-800 bg-opacity-30 text-blue-600 dark:text-gray-50  flex items-center justify-between py-1.5 px-4 rounded cursor-pointer">
                                 <span class="flex items-center space-x-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"></path>
@@ -88,7 +88,7 @@ export default function Email1(props) {
                 </div>
             </div>
             <div class="flex-1 px-3">
-                <button data-drawer-target="separator-sidebar" data-drawer-toggle="separator-sidebar" aria-controls="separator-sidebar" type="button" class="inline-flex items-center mt-2 text-sm text-gray-500 rounded hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-900">
+                <button data-drawer-target="separator-sidebar" data-drawer-toggle="separator-sidebar" aria-controls="separator-sidebar" type="button" class="inline-flex items-center mt-2 text-sm text-gray-500 rounded hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-900 md:hidden">
                     <span class="sr-only">Open sidebar</span>
                     <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
@@ -111,7 +111,7 @@ export default function Email1(props) {
                         <textarea id="body" class="dark:bg-gray-800 px-3 mt-1 w-full h-64 text-gray-700 dark:text-gray-400 border-b py-2 border-b-gray-300 focus:outline-none focus:ring-0 focus:border-transparent focus:border-b-gray-300 rounded-md" placeholder="Message..."></textarea>
                     </div>
                     <div class="flex flex-wrap items-center my-4 gap-2">
-                        <div class="w-40 flex items-center justify-between text-gray-500 px-2 py-1.5  border border-gray-400 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800">
+                        <div class="w-40 flex items-center justify-between text-gray-500 dark:text-gray-50 px-2 py-1.5  border border-gray-400 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800">
                             <div class="w-28 flex items-center space-x-1 ">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
@@ -124,7 +124,7 @@ export default function Email1(props) {
                                 </svg>
                             </button>
                         </div>
-                        <div class="w-40 flex items-center justify-between text-gray-500 px-2 py-1.5  border border-gray-400 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800">
+                        <div class="w-40 flex items-center justify-between text-gray-500 dark:text-gray-50 px-2 py-1.5  border border-gray-400 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800">
                             <div class="w-28 flex items-center space-x-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>

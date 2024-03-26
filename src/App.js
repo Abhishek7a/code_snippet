@@ -43,6 +43,8 @@ import CodeEcommerce1 from './pages/codeEcommerce/CodeEcommerce1';
 import CodeEcommerce2 from './pages/codeEcommerce/CodeEcommerce2';
 import CodeCheckout1 from './pages/codeCheckout/CodeCheckout1';
 import CodeCheckout2 from './pages/codeCheckout/CodeCheckout2';
+import CodeEmail1 from './pages/codeEmails/CodeEmail1';
+import CodeEmail2 from './pages/codeEmails/CodeEmail2';
 
 function App() {
   const NavBar = MainNavbar(Navbars);
@@ -110,6 +112,9 @@ function App() {
 
             <Route exact path='/codeCheckout1' element={<CodeCheckout1 />} />
             <Route exact path='/codeCheckout2' element={<CodeCheckout2 />} />
+
+            <Route exact path='/codeEmail1' element={<CodeEmail1 />} />
+            <Route exact path='/codeEmail2' element={<CodeEmail2 />} />
 
             <Route path='*' element={<NavBar />} />
           </Routes>

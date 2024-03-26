@@ -31,7 +31,7 @@ export default function Login() {
             <Login5 />
             {/* <Login6 /> */}
             {/* <Login7 /> */}
-            {/* <Login8 /> */}
+            <Login8 />
             {/* <Login9 /> */}
             {/* <Login10 />  */}
         </>

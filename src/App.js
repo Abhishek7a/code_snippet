@@ -45,6 +45,14 @@ import CodeCheckout1 from './pages/codeCheckout/CodeCheckout1';
 import CodeCheckout2 from './pages/codeCheckout/CodeCheckout2';
 import CodeEmail1 from './pages/codeEmails/CodeEmail1';
 import CodeEmail2 from './pages/codeEmails/CodeEmail2';
+import CodeCard1 from './pages/codeCards/CodeCard1';
+import CodeCard2 from './pages/codeCards/CodeCard2';
+import CodeCard3 from './pages/codeCards/CodeCard3';
+import CodeCard4 from './pages/codeCards/CodeCard4';
+import CodeCard5 from './pages/codeCards/CodeCard5';
+import CodeDialogbox1 from './pages/codeDialogbox/CodeDialogbox1';
+import CodeDialogbox2 from './pages/codeDialogbox/CodeDialogbox2';
+import CodeDialogbox3 from './pages/codeDialogbox/CodeDialogbox3';
 
 function App() {
   const NavBar = MainNavbar(Navbars);
@@ -115,6 +123,16 @@ function App() {
 
             <Route exact path='/codeEmail1' element={<CodeEmail1 />} />
             <Route exact path='/codeEmail2' element={<CodeEmail2 />} />
+
+            <Route exact path='/codeCard1' element={<CodeCard1 />} />
+            <Route exact path='/codeCard2' element={<CodeCard2 />} />
+            <Route exact path='/codeCard3' element={<CodeCard3 />} />
+            <Route exact path='/codeCard4' element={<CodeCard4 />} />
+            <Route exact path='/codeCard5' element={<CodeCard5 />} />
+
+            <Route exact path='/codeDialogbox1' element={<CodeDialogbox1 />} />
+            <Route exact path='/codeDialogbox2' element={<CodeDialogbox2 />} />
+            <Route exact path='/codeDialogbox3' element={<CodeDialogbox3 />} />
 
             <Route path='*' element={<NavBar />} />
           </Routes>

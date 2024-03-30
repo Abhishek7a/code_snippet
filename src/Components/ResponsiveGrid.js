@@ -54,7 +54,7 @@ const ResponsiveGrid = (WrappedComponent, name) => {
                 </div>
             </div>
 
-            <div className={`p-0 border-2 border-gray-900 pr-96 rounded-b-lg max-h-[500px] min-h-96 hide-scrollbar overflow-y-scroll  ${dark ? 'bg-gray-900' : 'light'}`} >
+            <div className={`p-0 border-2 border-gray-900 pr-96 rounded-b-lg max-h-[500px] min-h-96 hide-scrollbar overflow-y-scroll  ${dark ? 'bg-gray-800' : 'light'}`} >
                 <header className={mobile === 2 ? "text-gray-600 body-font w-custom w-25 mx-auto border-x-2  border-gray-300 " : mobile === 1 ? "text-gray-600 body-font w-50 mx-auto border-x-2 border-gray-300" : "text-gray-600 body-font w-full "} >
                     <WrappedComponent state={mobile} />
                 </header>

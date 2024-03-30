@@ -15,8 +15,8 @@ export default function Footers() {
         <>
             <Footer1/>
             <Footer2/>
-            <Footer3/>
             <Footer4/>
+            <Footer3/>
         </>
     )
 }

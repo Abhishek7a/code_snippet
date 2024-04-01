@@ -53,6 +53,9 @@ import CodeCard5 from './pages/codeCards/CodeCard5';
 import CodeDialogbox1 from './pages/codeDialogbox/CodeDialogbox1';
 import CodeDialogbox2 from './pages/codeDialogbox/CodeDialogbox2';
 import CodeDialogbox3 from './pages/codeDialogbox/CodeDialogbox3';
+import CodeLogin2 from './pages/codeLogin/CodeLogin2';
+import CodeLogin5 from './pages/codeLogin/CodeLogin5';
+import CodeLogin8 from './pages/codeLogin/CodeLogin8';
 
 function App() {
   const NavBar = MainNavbar(Navbars);
@@ -133,6 +136,10 @@ function App() {
             <Route exact path='/codeDialogbox1' element={<CodeDialogbox1 />} />
             <Route exact path='/codeDialogbox2' element={<CodeDialogbox2 />} />
             <Route exact path='/codeDialogbox3' element={<CodeDialogbox3 />} />
+            
+            <Route exact path='/codeLogin2' element={<CodeLogin2 />} />
+            <Route exact path='/codeLogin5' element={<CodeLogin5 />} />
+            <Route exact path='/codeLogin8' element={<CodeLogin8 />} />
 
             <Route path='*' element={<NavBar />} />
           </Routes>

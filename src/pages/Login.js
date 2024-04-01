@@ -12,16 +12,16 @@ import login9 from '../Components/login/Login9';
 import login10 from '../Components/login/Login10';
 
 export default function Login() {
-    const Login1 = RespinsiveGrid(login1, { name: 'CodeLogin1' });
-    const Login2 = RespinsiveGrid(login2, { name: 'CodeLogin2' });
-    const Login3 = RespinsiveGrid(login3, { name: 'CodeLogin3' });
-    const Login4 = RespinsiveGrid(login4, { name: 'CodeLogin4' });
-    const Login5 = RespinsiveGrid(login5, { name: 'CodeLogin5' });
-    const Login6 = RespinsiveGrid(login6, { name: 'CodeLogin6' });
-    const Login7 = RespinsiveGrid(login7, { name: 'CodeLogin7' });
-    const Login8 = RespinsiveGrid(login8, { name: 'CodeLogin8' });
-    const Login9 = RespinsiveGrid(login9, { name: 'CodeLogin9' });
-    const Login10 = RespinsiveGrid(login10, { name: 'CodeLogin10' });
+    const Login1 = RespinsiveGrid(login1, { name: 'codeLogin1' });
+    const Login2 = RespinsiveGrid(login2, { name: 'codeLogin2' });
+    const Login3 = RespinsiveGrid(login3, { name: 'codeLogin3' });
+    const Login4 = RespinsiveGrid(login4, { name: 'codeLogin4' });
+    const Login5 = RespinsiveGrid(login5, { name: 'codeLogin5' });
+    const Login6 = RespinsiveGrid(login6, { name: 'codeLogin6' });
+    const Login7 = RespinsiveGrid(login7, { name: 'codeLogin7' });
+    const Login8 = RespinsiveGrid(login8, { name: 'codeLogin8' });
+    const Login9 = RespinsiveGrid(login9, { name: 'codeLogin9' });
+    const Login10 = RespinsiveGrid(login10, { name: 'codeLogin10' });
     return (
         <>
             {/* <Login1 /> */}
